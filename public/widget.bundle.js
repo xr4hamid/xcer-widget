@@ -4,7 +4,7 @@
 
   const iframe = document.createElement("iframe");
   
-  iframe.src = "https://xcerwidgit.netlify.app/widget.html"; // ⚠️ Update this if port changes
+  iframe.src = "https://xcerwidgit.netlify.app"; // ⚠️ Update this if port changes
 
   // ✅ Proper Chat Bubble Styling
   iframe.style.position = "fixed";
