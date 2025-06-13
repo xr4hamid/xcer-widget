@@ -5,7 +5,7 @@ import Chatbox from "./chatbox";
 import { FiX } from "react-icons/fi";
 import "./widget.css"; // 👈 import the new styles
 const queryParams = new URLSearchParams(window.location.search);
-const autoStart = queryParams.get("autostart") === "true";
+// const autoStart = queryParams.get("autostart") === "true";
 
 
 
