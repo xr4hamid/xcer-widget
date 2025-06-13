@@ -30,11 +30,15 @@ function App() {
           <FiX />
         </div>
       ) : (
-        <img
-          src="/ai-bubble.gif"
-          alt="Chat with Assistant"
-          className={`chat-toggle-icon ${isOpen ? "rotated" : ""}`}
-        />
+        <div className="chat-toggle-icon-wrapper">
+  <img
+    src="/ai-bubble.gif"
+    alt="Chat with Assistant"
+    className={`chat-toggle-icon ${isOpen ? "rotated" : ""}`}
+  />
+  <span className="chat-icon-label">XCER AI</span>
+</div>
+
       )}
     </div>
   </button>
