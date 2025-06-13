@@ -2,7 +2,7 @@
 
 (function () {
   const iframe = document.createElement("iframe");
-  iframe.src = "https://your-domain.com/widget.html"; // ← isko bad me update karenge
+  iframe.src = "https://xcerwidgit.netlify.app/widget.html"; // ← isko bad me update karenge
   iframe.style.position = "fixed";
   iframe.style.bottom = "20px";
   iframe.style.right = "20px";
