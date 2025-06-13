@@ -1,5 +1,6 @@
 /* src/widget.css */
 
+
 .chat-toggle-button {
   position: fixed;
   bottom: 1rem;
@@ -45,16 +46,72 @@
 
 .chatbox-container {
   position: fixed;
-  bottom: 6rem; /* adjust as needed to sit above the icon */
+  bottom: 6rem;
   right: 1rem;
   width: 360px;
   max-height: 80vh;
   background: white;
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   z-index: 40;
   overflow: hidden;
+  animation: fadeInUp 0.4s ease-in-out forwards;
+  border: 2px solid rgba(54, 237, 250, 0.171);
+  /* animation: chatGlow 2s infinite alternate, fadeInUp 0.4s ease-in-out forwards; */
 }
+
+/* Slide-up + fade animation */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Glowing border pulse like Gemini */
+@keyframes chatGlow {
+  0% {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -122,5 +179,48 @@
       0 0 20px #ffff00,
       0 0 40px #ffff00,
       0 0 80px #ffff00;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chat-close-icon {
+  color: #fff;
+  background: #111;
+  border-radius: 9999px;
+  width: 80px;
+  height: 80px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.111s ease-in-out;
+  box-shadow: 0 0 10px #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.chat-close-icon:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
