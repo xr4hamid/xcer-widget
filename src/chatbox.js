@@ -1,12 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-// import { FaArrowUp, FaMoon, FaSun, FaFileExport, FaTrash } from 'react-icons/fa';
+import { Sun, Moon, FileDown, Trash2 } from 'lucide-react';
 import { FiCopy } from 'react-icons/fi';
 import './chatbox.css';
-// import {
-//   Moon, Sun, Trash2, FileDown, X
-// } from "lucide-react";
+import { FaArrowUp } from 'react-icons/fa';
 
 
 
